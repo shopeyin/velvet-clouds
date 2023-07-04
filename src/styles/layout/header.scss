@@ -1,7 +1,7 @@
 .header{
     height: 100vh;
     height: 100dvh;
-    border: 1px solid red;
+   
     display: flex;
     flex-direction: column;
     background: url(../assets/header.png);
@@ -9,13 +9,14 @@
     background-size: cover;
     background-position:center;
     color:$color-white;
-
+    position: relative;
+    overflow-x: hidden;
     @include media('<=phone') {
         background-position: 54%;
     }
 }
 .header__navSocials{
-    border: 1px solid green;
+  
     display: flex;
     justify-content: space-between;
     margin-top: 5.6rem;
@@ -25,7 +26,7 @@
 .navigation__list-text{
     width: 24.2rem;
     display: flex;
-    border: 1px solid red;
+   
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
@@ -36,7 +37,7 @@
 .navigation__list-icon{
     width: 13rem;
     display: flex;
-    border: 1px solid red;
+   
     justify-content: space-between;
     align-items: center;
 }
@@ -45,8 +46,7 @@
     width: 3.6rem;
     height: 3.6rem;
     position: relative;
-    border: 1px solid red;
-    background-color: blue;
+ 
     &-image{
         @extend %cover;
         object-fit: cover; 
@@ -55,7 +55,7 @@
 }
 
 .header__description-wrapper{
-    border: 1px solid yellow;
+   
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -63,20 +63,27 @@
 }
 
 .header__description-content{
-    border: 1px solid red;
-    height: 50rem;
+  
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .velvet-clouds{
     display: flex;
     flex-direction: column;
     width: 21.7rem;
-    border: 1px solid green;;
+    
+
+    @include media('>phone') {
+        position: absolute;
+        left: -13rem;
+        top: -9em;
+    }
+   
 }
 .velvet-clouds-box{
-    border: 1px solid red;
+   
     display: inline-flex;
     width: 19.8rem;
     padding: 1px 2.4rem;
@@ -120,13 +127,108 @@
 
 .header__ukTour{
     font-size: 16rem;
-    border: 1px solid;
-    border:1px solid red;
+    
 }
 
 .header__address{
     width: 44.6rem;
     font-size: 2.8rem;
     font-weight: 700;
-    border:1px solid black;
+  
+}
+.header__btn{
+   
+    display: flex;
+    margin-top: 7rem;
+
+    @include media('<=phone') {
+      flex-direction: column;
+    }
+}
+.btn{
+    display: flex;
+    height: 4.4rem;
+    padding: 1rem 4.8rem;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 0.6rem;
+    background: $color-white; 
+    color: $color-mine-shaft;
+    // margin-right:1.9rem;
+    margin-top: 3.8rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family:" DM Sans";
+    font-style: normal;
+    font-weight: 700; 
+   
+
+    @include media('>phone') {
+        margin-right:1.9rem;
+    }
+
+    @include media('<=phone') {
+        padding: 4rem 4.8rem;
+    }
+}
+ .btn:hover {
+    background-color:$color-spring-green;
+}
+
+
+
+.header__images-arrow{
+    width: 2.1rem;
+    height: 5.4rem;
+    position: absolute;
+   
+    bottom:0;
+    transform: translateX(-50%);
+    left: 50%;
+    &-image{
+        @extend %cover;
+        object-fit: cover; 
+    }
+
+    // @include media('<=phone') {
+    //     width: 4rem;
+    //     height: 10rem;
+    // }
+}
+
+
+.header__images-linesTop{
+ 
+    width: 100%;
+    height: 16.7rem;
+   
+    position: absolute;
+    top:0;
+    left: 20%;
+   
+    &-image{
+        @extend %cover;
+        object-fit: cover; 
+    }
+
+    @include media('<=phone') {
+        left: 0%;
+    }
+}
+
+.header__images-linesBottom{
+    width: 100%;
+    height: 30.7rem;
+  
+    position: absolute;
+    bottom:-10rem;
+    right: 22%;
+    &-image{
+        @extend %cover;
+        object-fit: cover; 
+    }
+
+    @include media('<=phone') {
+        right: 0;
+    }
 }

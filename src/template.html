@@ -8,8 +8,8 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-            <nav class="header__navSocials">
+      <header class="header">       
+        <nav class="header__navSocials">
                 <ul class="navigation__list-text">
                   <li class="navigation__list-item"><a href="#"  class="navigation__list-link">info</a></li>
                   <li class="navigation__list-item"><a href="#"  class="navigation__list-link">schedule</a></li>
@@ -58,7 +58,28 @@
                           <h1 class="header__address">04 May - 17  May<br> london, Glasgow,<br> Birmingham & Manchester</h1>
                           
                       </div>
+                      <div class="header__btn">
+                            <button class="btn">
+                                Tickets
+                            </button>
+                            <button class="btn">
+                                More Info
+                          </button>
+                      </div>
                   </div>
+            </div>
+            <div class="header__images">
+              <figure class="header__images-arrow">
+                <img src='<%= require("./assets/arrow-1.svg") %>' class="header__images-arrow-image"/>
+              </figure>
+
+              <figure class="header__images-linesTop">
+                <img src='<%= require("./assets/Lines-1.svg") %>' class="header__images-linesTop-image"/>
+              </figure>
+
+              <figure class="header__images-linesBottom">
+                <img src='<%= require("./assets/lines-2.svg") %>' class="header__images-linesBottom-image"/>
+              </figure>
             </div>
       </header>
       
