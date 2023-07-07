@@ -27,8 +27,8 @@ html {
 }
 
 body{
-  font-family:"Codystar";
-
+  // font-family:"Codystar";
+  // overflow: hidden;
 }
 
 
@@ -48,5 +48,8 @@ button{
 .container{
   width: min(140rem, 100%);
   margin-inline: auto;
+  background: $color-mine;
+  overflow-x: hidden; 
+  
 
 }
