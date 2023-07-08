@@ -5,3 +5,31 @@
     color:white;
     font-size:5rem;
 }
+
+.arrow-left, .arrow-right{
+    display: flex;
+   
+}
+
+.arrow-left .arrow__media{
+    width: 16.3rem;
+    height: 17.6rem;
+    position: relative;
+    margin-left: -4rem;
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+}
+.arrow-right .arrow__media{
+    width: 16.3rem;
+    height: 17.6rem;
+    position: relative;
+    margin-right: -4rem;
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+}

@@ -20,7 +20,7 @@ html {
   // position: fixed;
 
 
-  @include media('<phone') {
+  @include media('<=phone') {
     font-size: calc(100vw / 750 * 10);
     
   }
@@ -47,6 +47,7 @@ button{
 
 .container{
   width: min(140rem, 100%);
+  // width: 100%;
   margin-inline: auto;
   background: $color-mine;
   overflow-x: hidden; 

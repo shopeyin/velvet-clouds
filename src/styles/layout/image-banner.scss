@@ -1,0 +1,14 @@
+.image__banner{
+    margin: 8rem 0;
+   
+    height: 76rem;
+    background: url(../assets/wendy.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+    @include media('<=phone') {
+        height: 60.6rem;
+       
+      }
+}
