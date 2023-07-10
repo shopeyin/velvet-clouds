@@ -11,7 +11,7 @@
     color:$color-white;
     position: relative;
     width: 100%;
-  
+    padding-inline: 2rem;
     
     // overflow-x: hidden;
     @include media('<=phone') {
@@ -81,8 +81,7 @@
     position: relative;
 
     @include media('<=phone') {
-         width:100%;
-        padding: 2rem;    
+        width:100%; 
     }
 }
 
@@ -91,14 +90,16 @@
     flex-direction: column;
     width: 21.7rem;
     
-
+   
+}
+.header-logo{
     @include media('>phone') {
         position: absolute;
         left: -13rem;
         top: -9em;
     }
-   
 }
+
 .velvet-clouds-box{
    
     display: inline-flex;

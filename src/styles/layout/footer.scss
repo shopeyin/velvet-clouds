@@ -1,0 +1,84 @@
+.footer{
+    min-height: 32.8rem;
+    background: $color-cod-gray;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+}
+.footer__bg-image{
+    width: 120rem;
+    height: 32.8rem;
+   
+    margin-inline: auto;
+    position: absolute;
+    left: 54%;
+    top:37%;
+    transform: translate(-50%, -50%);
+
+    &-image{
+         @extend %cover;
+        object-fit: cover;
+       
+    }
+
+
+    @include media('<=phone') {
+        height: 25.8rem;
+        top:30%;
+    }
+}
+
+.footer__logo{
+    display: flex;
+   
+    margin-top: 15rem;
+    flex: 1;
+    &-one{
+        flex: 1;
+      
+        display: flex;
+        align-items: flex-end;
+
+    }
+    &-two{
+        flex: 1; 
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.footer__velvet-logo{
+   
+    margin: 0 5rem;
+}
+.footer__logo-two-media{
+    margin: 0 6.1rem;
+}
+.footer__text-box{
+   
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.footer__text{
+    color: $color-white;
+    text-align: center;
+    font-family:"DM Sans";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer__logo-two-media{
+    width: 10.8rem;
+    height: 9.6rem;
+    position: relative;
+
+    &-image{
+        @extend %cover;
+        object-fit: cover;
+       
+    }
+}
